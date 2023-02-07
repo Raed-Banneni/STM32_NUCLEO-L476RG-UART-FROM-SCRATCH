@@ -1,0 +1,9 @@
+../Src/uart.c:28:5:__io_putchar	16	static
+../Src/uart.c:33:6:ledon	4	static
+../Src/uart.c:38:6:ledoff	4	static
+../Src/uart.c:44:6:led_init	4	static
+../Src/uart.c:50:6:uart2_rxtx_init	8	static
+../Src/uart.c:95:13:uart_set_baudrate	24	static
+../Src/uart.c:99:17:compute_uart_bd	16	static
+../Src/uart.c:103:6:uart2_write	16	static
+../Src/uart.c:110:6:uart2_read	4	static
