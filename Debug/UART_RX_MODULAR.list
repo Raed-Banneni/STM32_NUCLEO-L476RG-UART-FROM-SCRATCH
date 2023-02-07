@@ -91,6 +91,8 @@ int main(void)
  80001cc:	f000 f834 	bl	8000238 <led_init>
 	uart2_rxtx_init();
  80001d0:	f000 f852 	bl	8000278 <uart2_rxtx_init>
+	/*if you want to use the receive mode */
+
 	while(1)
 	{
 		ledon();
@@ -259,7 +261,7 @@ void uart2_rxtx_init(void)
  8000302:	f043 0380 	orr.w	r3, r3, #128	; 0x80
  8000306:	6013      	str	r3, [r2, #0]
 
-	/*Set PA3 alternate function type to UART_TX (AF7)*/
+	/*Set PA3 alternate function type to UART_RX (AF7)*/
 		GPIOA->AFR[0] |=(1U<<12);
  8000308:	f04f 4390 	mov.w	r3, #1207959552	; 0x48000000
  800030c:	6a1b      	ldr	r3, [r3, #32]

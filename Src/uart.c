@@ -69,7 +69,7 @@ void uart2_rxtx_init(void)
 	GPIOA->MODER &=~(1U<<6);
 	GPIOA->MODER |=(1U<<7);
 
-	/*Set PA3 alternate function type to UART_TX (AF7)*/
+	/*Set PA3 alternate function type to UART_RX (AF7)*/
 		GPIOA->AFR[0] |=(1U<<12);
 		GPIOA->AFR[0] |=(1U<<13);
 		GPIOA->AFR[0] |=(1U<<14);
